@@ -294,7 +294,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://www.hello-cpp.com/2017/02/07/第二篇测试博文/">
+  <link itemprop="mainEntityOfPage" href="http://www.hello-cpp.com/2017/02/07/第一篇博文/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="章驰">
@@ -319,8 +319,8 @@
             
               
                 
-                <a class="post-title-link" href="/2017/02/07/第二篇测试博文/" itemprop="url">
-                  第二篇测试博文
+                <a class="post-title-link" href="/2017/02/07/第一篇博文/" itemprop="url">
+                  第一篇博文
                 </a>
               
             
@@ -336,7 +336,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-07T21:22:44+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-07T21:36:28+08:00">
                 2017-02-07
               </time>
             
@@ -350,7 +350,7 @@
 			<span>更新于</span>
 			<time>
 				2017-02-07
-				21:22:44
+				21:36:28
 			</time>
 		</span>
 
@@ -364,8 +364,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/02/07/第二篇测试博文/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/07/第二篇测试博文/" itemprop="commentCount"></span>
+                <a href="/2017/02/07/第一篇博文/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/07/第一篇博文/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -375,7 +375,7 @@
 		  
 		
 		
-			<span id="/2017/02/07/第二篇测试博文/" class="leancloud_visitors" data-flag-title="第二篇测试博文">
+			<span id="/2017/02/07/第一篇博文/" class="leancloud_visitors" data-flag-title="第一篇博文">
 			&nbsp; | &nbsp;
 			<span class="post-meta-item-icon">
 				<i class="fa fa-eye"></i>
@@ -408,12 +408,14 @@
       
         
           
-          别着急，这只是一个测试而已！
+                                  
+
+首先感谢volc1605 的博文，让我能搭建一个自己博客，虽说搞了N久，遇到N多问题（volc1605的博文有些小问题），但总算有了一个结果，也是不错的。其次给自己定一个目标吧，每周至少一篇技术类的博文，希望自己能坚持下去，加油！！！
 
           
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/02/07/第二篇测试博文/#more" rel="contents">
+            <a class="btn" href="/2017/02/07/第一篇博文/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -795,7 +797,7 @@
       query.find()
         .done(function (results) {
           var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-          var UPDATED_AT = '.leancloud-updated-at'; // 新增代码 定义最近变更时间的class
+          var UPDATED_AT = '.leancloud-updated-at';
           if (results.length === 0) {
             $visitors.find(COUNT_CONTAINER_REF).text(0);
             return;
@@ -804,11 +806,11 @@
           for(var i = 0; i < results.length; i++) {
             var item = results[i];
             var url = item.get('url');
-            var time = item.get('time');   // 获取阅读量
-            var updatedT = item.updatedAt; // 新增代码 获取最近浏览时间 需要注意的是updateT是对象并不是字符串
+            var time = item.get('time');
+            var updatedT = item.updatedAt;
             var element = document.getElementById(url);
             $(element).find(COUNT_CONTAINER_REF).text(time);
-            // 新增代码 转换日期格式
+            
             if(updatedT != null && updatedT != '') {
               var a = [updatedT.getFullYear(), updatedT.getMonth() + 1, updatedT.getDate(), updatedT.getHours(), updatedT.getMinutes(), updatedT.getSeconds()];
               for(var j = 0,len = a.length; j < len; j++) {
@@ -828,11 +830,10 @@
             if( countSpan.text() == '') {
               countSpan.text(0);
             }
-            // 新增代码 如果首页的文章没有更新侧默认为无人浏览
+            
             if(updatedAtContent.text() == '') {
               updatedAtContent.text('无人浏览');
             }
-            // 结束
           }
         })
         .fail(function (object, error) {
