@@ -3,39 +3,6 @@
 
 
     
-  <url>
-    <loc>http://yoursite.com/2017/01/31/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2017-02-01T05:28:59.506Z</lastmod>
-    <data>
-        <display>
-        <title>测试</title>
-        <pubTime>2017-01-31T02:01:16.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="hexo" url="http://yoursite.com/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
     
-    
-    
-  <url>
-    <loc>http://yoursite.com/2017/01/29/hello-world/</loc>
-    <lastmod>2017-01-29T04:05:31.398Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-01-29T04:05:31.398Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
 </urlset>
