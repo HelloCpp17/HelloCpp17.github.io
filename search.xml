@@ -4,6 +4,13 @@
   
     
     <entry>
+      <title><![CDATA[第二篇测试博文]]></title>
+      <url>http://www.hello-cpp.com/2017/02/07/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%B5%8B%E8%AF%95%E5%8D%9A%E6%96%87/</url>
+      <content type="html"><![CDATA[<p>别着急，这只是一个测试而已！</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[说些啥呢]]></title>
       <url>http://www.hello-cpp.com/2017/02/07/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
       <content type="html"><![CDATA[<div><br>    <center><br>        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=155910&auto=1&height=66"><br>        </iframe><br>    </center><br></div>
